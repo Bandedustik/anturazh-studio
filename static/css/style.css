@@ -1,0 +1,142 @@
+/*========== GLOBAL ==========*/
+@font-face{
+  font-family: 'Franklin Gothic Book';
+  src: url('../fonts/FRABK.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Franklin Gothic Demi';
+  src: url('../fonts/FRADM.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Ariston';
+  src: url('../fonts/4241.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Cassandra';
+  src: url('../fonts/4250.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'Franklin Gothic Book';
+}
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+.row-with-full-height{
+  height: 100%;
+}
+/*========== HEADER ==========*/
+header{
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+header h2{
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+header p{
+  color: #4e3210;
+}
+
+/*========== NAV =========*/
+nav li{
+  text-transform: uppercase;
+
+}
+nav li .nav-link{
+  color: #91583d !important;
+  font-weight: bold;
+}
+nav li .nav-link:hover{
+  color: #3e2b23 !important;
+}
+
+/*========== SERVICES =========*/
+#services .service-item-block{
+  width: 300px;
+  overflow: hidden;
+}
+#services .service-item-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #91583d;
+  text-align: center;
+  text-transform: uppercase;
+  height: 50px;
+}
+#services .service-item-header a{
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #ffd272;
+}
+#services img{
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+}
+#services img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+
+ /*========== HOW IT WORKS ==========*/
+ #how-it-works h2{
+   font-size: 3rem;
+ }
+ #how-it-works .hiw-header-number{
+   font-family: 'Ariston';
+   font-size: 8rem;
+   color: #422400;
+ }
+ #how-it-works .hiw-header{
+   text-align: center;
+ }
+  #how-it-works .hiw-header h3{
+    font-weight: bold;
+  }
+
+/*========== ADVANTAGES ==========*/
+#advantages{
+  background-color: #f9f9f9;
+}
+#advantages h2{
+  font-size: 3rem;
+}
+
+/*========= FOOTER ==========*/
+footer{
+  padding: 25px 0 0 50px;
+}
+/*========= MEDIA QUERIES =========*/
+@media (min-width: 768px){
+  header{
+    background-image: url('../images/header-bg.jpg');
+    min-height: 250px;
+  }
+  #services .service-item-block{
+    width: 100%;
+  }
+}
+@media (min-width: 992px){
+  header{
+    min-height: 310px;
+  }
+}
+@media (min-width: 1200px){
+  header{
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+  }
+}

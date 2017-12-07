@@ -1,0 +1,132 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Студия Антураж</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header>
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-3 align-self-center text-center">
+              <h2>Салон-ателье</h2>
+            </div>
+            <div class="col-md-6">
+              <img src="{% static 'images/logo.png' %}" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-md-3 align-self-center text-center">
+              <p>ул. Эльтонская 1А,<br>тел.: 217 62 88<br>+7(910) 795 34 40<br>info@anturazh-studio.ru</p>
+              <div class="row justify-content-center">
+                <div class="col-3 px-0">
+                  <a href="#" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </div>
+                <div class="col-3 px-0">
+                  <a href="#" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </a>
+                </div>
+                <div class="col-3 px-0">
+                  <a href="#" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
+
+      <!-- NAV -->
+      <div class="container-fluid px-0 ">
+        <!-- НАВИГАЦИЯ -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#main">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#catalog">Каталог продукции</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#advantages">Наши преимущества</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!-- НАВИГАЦИЯ -->
+      </div>
+      <!-- NAV -->
+
+      {% block body_block %}
+
+      {% endblock %}
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-4"><img src="{% static 'images/footer-logo.png' %}" class="img-fluid" alt="Footer Logo"></div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-5 d-flex  align-items-center justify-content-center">
+                  <div class="row justify-content-center">
+                    <div class="col-4 px-0">
+                      <a href="#" class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 px-0">
+                      <a href="#" class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 px-0">
+                      <a href="#" class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <p>ул. Эльтонская 1А,<br>тел.: 217 62 88<br>+7(910) 795 34 40<br>info@anturazh-studio.ru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
